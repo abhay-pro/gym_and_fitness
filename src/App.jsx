@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Loader2, AlertCircle } from 'lucide-react';
 
+import { APP_CONFIG } from './config/appConfig';
 import { gymApi } from './api/gymApi';
 import { useGymData } from './hooks/useGymData';
 
@@ -112,7 +113,7 @@ export default function App() {
     return (
       <div className="min-h-screen bg-[#0d0304] flex flex-col items-center justify-center p-6 text-center space-y-4">
         <Loader2 className="w-12 h-12 text-red-500 animate-spin" />
-        <h2 className="text-xl font-black text-white tracking-wider">CONNECTING TO EAGLE ARENA API...</h2>
+        <h2 className="text-xl font-black text-white tracking-wider">CONNECTING TO {APP_CONFIG.shortName} API...</h2>
         <p className="text-xs text-slate-400">Loading live machinery datasets, coach profiles, and class schedules</p>
       </div>
     );
