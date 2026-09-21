@@ -8,7 +8,6 @@ export const Navbar = ({ mobileMenuOpen, setMobileMenuOpen }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
         
         <a href="#hero" className="flex items-center gap-2.5 sm:gap-3 group min-w-0">
-          <AppLogo size={56} className="sm:hidden" glowing={true} />
           <AppLogo size={72} className="hidden sm:inline-flex" glowing={true} />
           <div className="flex flex-col truncate">
             <span className="text-xl sm:text-2xl lg:text-3xl font-black tracking-wider uppercase bg-gradient-to-r from-red-500 via-amber-300 to-red-600 bg-clip-text text-transparent truncate">
